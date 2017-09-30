@@ -1,0 +1,14 @@
+net: "examples/imagenet/lwr_compress_train_val.prototxt"
+test_iter: 1000
+test_interval: 5000
+base_lr: 0.001
+lr_policy: "step"
+gamma: 0.1
+stepsize: 100000
+display: 20
+max_iter: 450000
+momentum: 0.9
+#weight_decay: 0.0005
+snapshot: 50000
+snapshot_prefix: "/home/liuwr/liuwenran/compress/surgery/output/alexnet/incremental/fcv_v2_lr0.001_noWD"
+solver_mode: GPU
